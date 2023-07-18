@@ -17,3 +17,12 @@ GET http://localhost:3000/api/v1/tasks/64b54c4b3b04101cc8cec6da HTTP/1.1
 ###
 
 DELETE http://localhost:3000/api/v1/tasks/64b5765adb9bac2bdc36f3f9 HTTP/1.1
+
+###
+PATCH http://localhost:3000/api/v1/tasks/64b54c4b3b04101cc8cec6da HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Cook dinner",
+    "completed": true
+}
